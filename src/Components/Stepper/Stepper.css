@@ -1,0 +1,118 @@
+.stepper__container{
+    display: flex;
+    width: 
+    794px;
+    margin: auto;
+    justify-content: space-around;
+    padding: 10px 10px 20px 10px;
+}
+.stepper{
+    display: flex;
+    gap: 5px;
+}
+.greycolorValue{
+    background-color: transparent;
+    color:#878E95;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.greycolorpValue{
+    background-color:#E5E9FB;
+    height: 3px;
+    width: 114px;
+    border-radius: 5px;
+}
+
+.redValue{
+    color: #EB6E7F;
+}
+.redpvalue{
+    background-color: #EB6E7F;
+}
+.Progress__bar{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin:auto;
+    margin-bottom:40px;
+}
+
+/* .stepper span {
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+} */
+.greycolor{
+    background-color: #DFE2E6;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.red{
+    background-color:  #EB6E7F!important;
+    color: #DFE2E6;
+}
+.page__number{
+    display: none;
+}
+.Progress__bar__media__child{
+    display: none;
+}
+
+@media only screen and (max-width: 818px) {
+    .stepper__container{
+        width: 375px;
+        margin: auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: end;
+    }
+    .greycolorValue , .greycolor{
+        display: none;
+    }
+    .redValue{
+        display: block;
+    }
+    .page__number{
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #EB6E7F;
+    }
+    .media__flex{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 4px;
+    }
+    .stepper{
+        width: 355px;
+        margin: auto;
+    }
+    .greycolorpValue{
+    display: none;
+    }
+    .Progress__bar__media__child{
+        display: block;
+        width: 350px;
+        height: 4px;
+        margin: auto;
+        background-color:#E5E9FB;
+        background: linear-gradient(to right, #EB6E7F 20%, #E5E9FB 20%);
+        border-radius: 5px;
+    }
+    .stepper__container{
+        padding-bottom: 15px;
+    }
+}

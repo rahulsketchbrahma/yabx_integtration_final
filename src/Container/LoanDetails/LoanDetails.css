@@ -1,0 +1,213 @@
+.loan__simulation__background{
+    background: url('../../assets/Topology-.png');
+    height:auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #F6F8FE;
+}
+
+.loan__simulator__pls__wrapper{
+    background-color: rgb(255, 255, 255);
+    width:794px;
+    height: auto;
+    margin: auto;
+    box-shadow: 1px 2px 24px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    
+}
+.loan__stepper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+output {
+    border: 1px solid #d7dbdd;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    padding: .4em .6em;
+    border-radius: 3px;
+  }
+.loan__simulator__content{
+    display: flex;
+    gap:3rem;
+}
+.loan__simulator__header{
+    padding: 40px 40px 0px 40px;
+}
+.loan__simulator__header__h3{
+    padding-bottom: 20px;
+}
+.loan__simulator__content__left__flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+.loan__simulator__content__left__flex h4{
+    font-size: 12px;
+    flex: 1;
+    letter-spacing: 0.02rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.loan__simulator__content__left__flex input{
+    width: 60px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #E6E6E6;
+   
+}
+.loan__simulator__content__left__range input{
+    width: 330px;
+}
+.loan__simulator__content__left__range__values{
+    display: flex;
+    justify-content: space-between;
+}
+.loan__simulator__content__left__range__values p {
+    font-size: 12px;
+    margin: 5px;
+}
+.loan__simulator__content__left__EIR input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 2px solid #E6E6E6;
+}
+.loan__simulator__content__left__EIR label{
+    font-size: 13px;
+    color:#666666;
+}
+.loan__simulator__content__left__range__values p{
+    color:#999999;
+}
+.loan__simulator__content__left__LP{
+    width: 92%;
+    margin: auto;
+    padding: 20px 20px 40px 20px;
+}
+
+.loan__simulator__content__left__LP label{
+    font-size: 13px;
+    color:#666666;
+    
+}
+.loan__simulator__content__left__LP select{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 2px solid #E6E6E6;
+   
+}
+.loanDetails__button__wrapper{
+    width: 55%;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+.loanDetails__button{
+    background-color: #EB6E7F;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #d3d3d3;
+    border-radius: 5px;
+    outline: none;
+    opacity: 1;
+  }
+  .slider:hover {
+    opacity: 1;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background: #ffffff;
+    border: 5px solid  #EB6E7F;
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background: #ffffff;
+    border: 5px solid  #EB6E7F;
+    cursor: pointer;
+}
+.slider::-moz-range-progress{
+    background-color:  #EB6E7F;
+}
+.loan__simulator__header__h3{
+    font-weight: 500;
+    color: #333333;
+}
+select{
+    background-color: #FCFCFC;
+}
+.Details__error{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    height: 44px;
+    font-weight: 400;
+    font-size:14px;
+    color: #E25050;
+   padding: 0px 35px 10px ;
+}
+
+@media only screen and (max-width: 818px) {
+    .loan__simulator__pls__wrapper{
+        width: 430px;
+        margin: auto;
+    }
+    .loan__simulator__content {
+     display: inline-block;
+    }
+    .loan__simulator__content__left__flex{
+        padding-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 455px) {
+    .loan__simulator__pls__wrapper{
+        width: 360px;
+        margin: auto;
+    }
+    .loan__simulator__header{
+        padding: 16px;
+        
+    }
+    .loan__simulator__content__left__EIR input{
+        width: auto;
+    }
+    .loanDetails__button{
+        display: inline-block;
+    }
+    .loan__simulation__background{
+        background-image: none;
+    }
+
+  }
